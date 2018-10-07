@@ -1,7 +1,6 @@
 #pragma once
 #include "afxwin.h"
 
-
 // DlgTTPhanVung dialog
 
 class DlgTTPhanVung : public CDialogEx

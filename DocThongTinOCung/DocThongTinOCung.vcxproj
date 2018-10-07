@@ -101,20 +101,24 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DiskInfo.h" />
     <ClInclude Include="DlgTTODia.h" />
     <ClInclude Include="DlgTTPhanVung.h" />
     <ClInclude Include="DocThongTinOCung.h" />
     <ClInclude Include="DocThongTinOCungDlg.h" />
+    <ClInclude Include="HardDiskInfo.h" />
     <ClInclude Include="LogicalPartitionInfo.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DiskInfo.cpp" />
     <ClCompile Include="DlgTTODia.cpp" />
     <ClCompile Include="DlgTTPhanVung.cpp" />
     <ClCompile Include="DocThongTinOCung.cpp" />
     <ClCompile Include="DocThongTinOCungDlg.cpp" />
+    <ClCompile Include="HardDiskInfo.cpp" />
     <ClCompile Include="LogicalPartitionInfo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

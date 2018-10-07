@@ -42,6 +42,12 @@
     <ClInclude Include="LogicalPartitionInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DiskInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HardDiskInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DocThongTinOCung.cpp">
@@ -60,6 +66,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LogicalPartitionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HardDiskInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
