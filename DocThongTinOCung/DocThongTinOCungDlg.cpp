@@ -110,6 +110,9 @@ BOOL CDocThongTinOCungDlg::OnInitDialog()
 	dlg_tt_phanvung_.ShowWindow(SW_SHOW);
 	dlg_tt_odia_.ShowWindow(SW_HIDE);
 
+	dlg_tt_phanvung_.HienThi();
+	dlg_tt_odia_.HienThi();
+
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 

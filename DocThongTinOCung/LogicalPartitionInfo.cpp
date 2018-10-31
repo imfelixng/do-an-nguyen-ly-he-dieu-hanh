@@ -33,6 +33,9 @@ unsigned long LogicalPartitionInfo::getTotalNumberOfClusters() {
 unsigned long LogicalPartitionInfo::getVolumeSerialNumber() {
 	return volumeSerialNumber;
 }
+unsigned long LogicalPartitionInfo::getBytesPerSector() {
+	return bytesPerSector;
+}
 long long LogicalPartitionInfo::getSize() {
 	return size;
 }
@@ -60,6 +63,9 @@ void LogicalPartitionInfo::setTotalNumberOfClusters(unsigned long mtotalNumberOf
 }
 void LogicalPartitionInfo::setVolumeSerialNumber(unsigned long mvolumeSerialNumber) {
 	volumeSerialNumber = mvolumeSerialNumber;
+}
+void LogicalPartitionInfo::setBytesPerSector(unsigned long mbytesPerSector) {
+	bytesPerSector = mbytesPerSector;
 }
 void LogicalPartitionInfo::setSize(long long msize) {
 	size = msize;

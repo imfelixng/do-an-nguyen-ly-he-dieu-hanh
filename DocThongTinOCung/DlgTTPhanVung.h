@@ -1,5 +1,7 @@
 #pragma once
 #include "afxwin.h"
+#include "DiskInfo.h"
+#include <iostream>
 
 // DlgTTPhanVung dialog
 
@@ -28,4 +30,10 @@ protected:
 	CEdit edt_dungluongconlai_;
 	CEdit edt_tongdungluong_;
 	CComboBox cb_phanvung_;
+
+
+public:
+	void HienThi();
+	void HienThiLenForm(ListLogicalPartitionInfo , int);
+	afx_msg void OnCbnSelchangeCbPhanvung();
 };

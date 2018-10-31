@@ -161,6 +161,7 @@ int DiskInfo::ReadLogicalPartitionsInfo() {
 		listLogicalPartitionInfo[i]->setVolumeSerialNumber(volumeSerialNumber);
 		listLogicalPartitionInfo[i]->setVolumeName(string(volumName));
 		listLogicalPartitionInfo[i]->setFileSystemName(string(fileSystem));
+		listLogicalPartitionInfo[i]->setBytesPerSector(bytesPerSector);
 		listLogicalPartitionInfo[i]->setSize(bytesPerSector * sectorsPerCluster * (long long)totalNumberOfClusters);
 
 	}

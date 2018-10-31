@@ -7,7 +7,7 @@ class LogicalPartitionInfo
 private:
 	string rootPathName, volumeName, fileSystemName;
 	unsigned long sectorsPerCluster, numberOfFreeClusters, totalNumberOfClusters;
-	unsigned long volumeSerialNumber;
+	unsigned long volumeSerialNumber, bytesPerSector;
 	long long size;
 	int type;
 
@@ -20,6 +20,7 @@ public:
 	unsigned long getNumberOfFreeClusters();
 	unsigned long getTotalNumberOfClusters();
 	unsigned long getVolumeSerialNumber();
+	unsigned long getBytesPerSector();
 	long long getSize();
 	int getType();
 
@@ -31,6 +32,7 @@ public:
 	void setNumberOfFreeClusters(unsigned long);
 	void setTotalNumberOfClusters(unsigned long);
 	void setVolumeSerialNumber(unsigned long);
+	void setBytesPerSector(unsigned long);
 	void setSize(long long);
 	void setType(int);
 	LogicalPartitionInfo();
