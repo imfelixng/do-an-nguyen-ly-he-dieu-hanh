@@ -79,10 +79,9 @@ void DlgTTODia::HienThiLenForm(ListHardDiskInfo listHardDiskInfo, int i) {
 	unsigned long tongsocylinder = hardDisk->getCylinders();
 	edt_tongsocylinder_.SetWindowTextW(ConvertStringToLPCWSTR_ODIA(std::to_string(tongsocylinder)).c_str());
 
-	unsigned long disksize = hardDisk->getDiskSize();
-	unsigned long kichthuoc = (disksize / 1024) / 1024;
-	edt_kichthuoc_.SetWindowTextW(ConvertStringToLPCWSTR_ODIA(std::to_string(disksize) + " GB").c_str());
-
+	unsigned long long disksize = hardDisk->getDiskSize();
+	unsigned long long kichthuoc = (disksize / 1024) / 1024 / 1024;
+	edt_kichthuoc_.SetWindowTextW(ConvertStringToLPCWSTR_ODIA(std::to_string(kichthuoc) + " GB").c_str());
 }
 
 void DlgTTODia::HienThi() {
