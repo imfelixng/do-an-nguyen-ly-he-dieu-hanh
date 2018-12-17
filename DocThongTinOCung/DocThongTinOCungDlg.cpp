@@ -6,6 +6,7 @@
 #include "DocThongTinOCung.h"
 #include "DocThongTinOCungDlg.h"
 #include "afxdialogex.h"
+#include "ThongTinDoAn.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -65,6 +66,7 @@ BEGIN_MESSAGE_MAP(CDocThongTinOCungDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_NOTIFY(TCN_SELCHANGE, IDC_TAB_THONGTIN, CDocThongTinOCungDlg::OnSelChangeTab)
+	ON_BN_CLICKED(IDC_BTN_ABOUT, &CDocThongTinOCungDlg::OnBnClickedBtnAbout)
 END_MESSAGE_MAP()
 
 
@@ -106,9 +108,11 @@ BOOL CDocThongTinOCungDlg::OnInitDialog()
 
 	dlg_tt_phanvung_.Create(IDD_DLG_TT_PHANVUNG, this);
 	dlg_tt_odia_.Create(IDD_DLG_TT_ODIA, this);
+	dlg_tt_doan_.Create(IDD_DLG_ABOUT, this);
 
 	dlg_tt_phanvung_.ShowWindow(SW_SHOW);
 	dlg_tt_odia_.ShowWindow(SW_HIDE);
+	dlg_tt_doan_.ShowWindow(SW_HIDE);
 
 	dlg_tt_phanvung_.HienThi();
 	dlg_tt_odia_.HienThi();
@@ -179,3 +183,9 @@ void CDocThongTinOCungDlg::OnSelChangeTab(NMHDR* pNMHDR, LRESULT* pResult) {
 }
 
 
+
+
+void CDocThongTinOCungDlg::OnBnClickedBtnAbout()
+{
+	dlg_tt_doan_.ShowWindow(SW_SHOW);
+}

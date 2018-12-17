@@ -48,6 +48,9 @@
     <ClInclude Include="HardDiskInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ThongTinDoAn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DocThongTinOCung.cpp">
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="HardDiskInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThongTinDoAn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

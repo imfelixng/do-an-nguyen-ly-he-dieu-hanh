@@ -7,7 +7,7 @@
 #include "afxcmn.h"
 #include "DlgTTPhanVung.h";
 #include "DlgTTODia.h";
-
+#include "ThongTinDoAn.h";
 // CDocThongTinOCungDlg dialog
 class CDocThongTinOCungDlg : public CDialogEx
 {
@@ -40,4 +40,7 @@ protected:
 	CTabCtrl tab_thongtin_;
 	DlgTTPhanVung dlg_tt_phanvung_;
 	DlgTTODia dlg_tt_odia_;
+	ThongTinDoAn dlg_tt_doan_;
+public:
+	afx_msg void OnBnClickedBtnAbout();
 };

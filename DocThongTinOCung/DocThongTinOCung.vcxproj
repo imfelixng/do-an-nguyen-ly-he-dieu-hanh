@@ -111,6 +111,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThongTinDoAn.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DiskInfo.cpp" />
@@ -124,6 +125,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ThongTinDoAn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DocThongTinOCung.rc" />
